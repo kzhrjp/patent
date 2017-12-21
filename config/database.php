@@ -46,12 +46,26 @@ return [
             'database' => env('DB_DATABASE', 'patent'),
             'username' => env('DB_USERNAME', 'adminuser'),
             'password' => env('DB_PASSWORD', 'admin'),
-            'unix_socket' => env('DB_SOCKET', '	/Applications/MAMP/tmp/mysql/mysql.sock'),
+            'unix_socket' => env('DB_SOCKET', '/var/lib/mysql/mysql.sock'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+        ],
+
+        'circle_test' => [
+	        'driver' => 'mysql',C
+	        'host' => '127.0.0.1',
+	        'port' => '3306',
+	        'database' => 'circle_test',
+	        'username' => 'ubuntu',
+	        'password' => '',
+	        'charset' => 'utf8mb4',
+	        'collation' => 'utf8mb4_unicode_ci',
+	        'prefix' => '',
+	        'strict' => true,
+	        'engine' => null,
         ],
 
         'pgsql' => [

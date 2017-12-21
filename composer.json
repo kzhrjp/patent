@@ -7,6 +7,7 @@
     "require": {
         "php": ">=7.0.0",
         "bestmomo/laravel-email-confirmation": "^1.1",
+        "deployer/deployer": "^6.0",
         "doctrine/dbal": "^2.6",
         "elasticsearch/elasticsearch": "^6.0",
         "fideloper/proxy": "~3.3",
